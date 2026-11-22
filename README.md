@@ -2,6 +2,8 @@
 
 Demo toko online untuk brand merch musik yang menjual ke pembeli **dalam dan luar negeri**: katalog bergaya feed Instagram, stok per ukuran, keranjang, checkout dengan ongkir per zona negara, pembayaran (simulasi), dan **dashboard admin** untuk mengelola produk dan pesanan.
 
+🛒 **Coba demo live:** https://khanigaraa.github.io/ashen-thread-store/
+
 > **Proyek portofolio.** *ashen.thread* adalah brand fiktif, dan semua produk, harga, serta kontak di sini hanya contoh. Pembayaran hanya simulasi, jadi tidak ada uang atau data kartu yang diproses.
 
 Ditulis dengan **TypeScript** murni dan **Vite**, tanpa framework UI. Diuji dengan **Vitest** (84 tes unit) dan **Playwright** (tes end-to-end).
@@ -31,7 +33,7 @@ npm install
 npm run dev
 ```
 
-Buka alamat yang muncul di terminal. Untuk masuk ke admin, buka `#/admin` lalu pakai login demo:
+Buka alamat yang muncul di terminal (atau langsung pakai [demo live](https://khanigaraa.github.io/ashen-thread-store/)). Untuk masuk ke admin, buka `#/admin` lalu pakai login demo:
 
 - Email: `admin@ashenthread.test`
 - Kata sandi: `demo-ashen`
