@@ -77,7 +77,7 @@ Demo ini sengaja belum memakai server. Untuk dipakai berjualan sungguhan, masih 
 
 Saya menerima pesanan website: toko online, landing page, company profile, portofolio, sampai aplikasi web.
 
-- LinkedIn: [khanigaraa](https://www.linkedin.com/in/khanigaraa)
+- LinkedIn: [kantakhanigara](https://www.linkedin.com/in/kantakhanigara)
 - Instagram: [@khanigaraa](https://www.instagram.com/khanigaraa)
 
 ## Lisensi
