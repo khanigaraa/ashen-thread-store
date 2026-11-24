@@ -34,6 +34,8 @@ await page.getByLabel('Street address').fill('12 Main Street');
 await page.getByLabel('City', { exact: true }).fill('Portland');
 await page.getByLabel('Postal code').fill('97201');
 await page.getByLabel('Country', { exact: true }).selectOption('US');
+await page.getByText('$15.00 · 14–28 days').waitFor();
+await shot('checkout');
 await page.getByRole('button', { name: 'Continue to payment' }).click();
 await page.getByRole('button', { name: 'Pay with PayPal' }).click();
 await page.waitForURL(/#\/order\//);
@@ -44,6 +46,12 @@ await page.getByLabel('Password').fill('demo-ashen');
 await page.getByRole('button', { name: 'Sign in' }).click();
 await page.getByRole('heading', { name: 'Dashboard' }).waitFor();
 await shot('admin-dashboard');
+
+// 4. Katalog di layar HP
+const phone = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+await phone.goto(`${BASE}#/`);
+await phone.waitForLoadState('networkidle');
+await phone.screenshot({ path: `${OUT}/mobile.jpg`, type: 'jpeg', quality: 80 });
 
 await browser.close();
 console.log(`Screenshot tersimpan di ${OUT}/ (sumber: ${BASE})`);
