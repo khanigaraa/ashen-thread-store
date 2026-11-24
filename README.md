@@ -8,6 +8,10 @@ Demo toko online untuk brand merch musik yang menjual ke pembeli **dalam dan lua
 
 Ditulis dengan **TypeScript** murni dan **Vite**, tanpa framework UI. Diuji dengan **Vitest** (84 tes unit) dan **Playwright** (tes end-to-end).
 
+| Katalog | Detail produk | Dashboard admin |
+|---|---|---|
+| ![Katalog toko: hero ashen.thread, filter kategori, dan kartu produk dengan label SOLD OUT](docs/katalog.jpg) | ![Halaman produk Night Ride Tee dengan pilihan ukuran S sampai XXL dan tombol Add to cart](docs/produk.jpg) | ![Dashboard admin: jumlah pesanan baru, total penjualan, pesanan terbaru, dan peringatan stok per ukuran](docs/admin-dashboard.jpg) |
+
 ## Fitur
 
 **Sisi pembeli**
@@ -28,6 +32,8 @@ Ditulis dengan **TypeScript** murni dan **Vite**, tanpa framework UI. Diuji deng
 
 ## Mencoba demo
 
+Butuh **Node.js 18 atau lebih baru** (diuji dengan Node 26).
+
 ```bash
 npm install
 npm run dev
@@ -44,7 +50,10 @@ Buka alamat yang muncul di terminal (atau langsung pakai [demo live](https://kha
 npm test            # 84 tes unit (Vitest)
 npm run test:e2e    # alur beli sampai admin (Playwright)
 npm run build       # cek TypeScript + build produksi
+npm run screenshots # perbarui gambar di docs/ dari demo live
 ```
+
+Tes end-to-end dan script screenshot memakai **Microsoft Edge** yang sudah terpasang (`channel: 'msedge'` di `playwright.config.ts`), jadi tidak perlu mengunduh browser Playwright. Di komputer tanpa Edge, jalankan `npx playwright install chromium` lalu hapus baris `channel` tersebut.
 
 ## Cara kerja
 
@@ -72,6 +81,19 @@ Demo ini sengaja belum memakai server. Untuk dipakai berjualan sungguhan, masih 
 - Login admin yang aman (bukan kata sandi di kode)
 - Integrasi pembayaran sungguhan (misalnya PayPal), dengan kunci API disimpan di environment variable
 - Pengiriman email konfirmasi sungguhan
+
+## Toko custom atau Shopify?
+
+Toko yang dibuat khusus seperti ini cocok kalau:
+
+- tampilan dan alurnya harus benar-benar mengikuti brand, misalnya katalog bergaya feed Instagram, stok per ukuran, atau tarif ongkir per zona negara yang ditentukan sendiri;
+- kamu ingin kode dan datanya milik sendiri, tanpa biaya langganan platform per bulan.
+
+Shopify, WooCommerce, atau marketplace lebih masuk akal kalau:
+
+- toko harus jalan secepatnya tanpa developer;
+- kamu butuh banyak integrasi siap pakai, seperti payment gateway lokal, ekspedisi, atau sinkron ke marketplace;
+- tidak ada orang yang akan merawat kode dan servernya.
 
 ## Mau dibuatkan toko online?
 
