@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-Buka alamat yang muncul di terminal (atau langsung pakai [demo live](https://khanigaraa.github.io/ashen-thread-store/)). Untuk masuk ke admin, buka `#/admin` lalu pakai login demo:
+Buka alamat yang muncul di terminal, biasanya http://localhost:5173 (atau langsung pakai [demo live](https://khanigaraa.github.io/ashen-thread-store/)). Untuk masuk ke admin, buka `#/admin` lalu pakai login demo:
 
 - Email: `admin@ashenthread.test`
 - Kata sandi: `demo-ashen`
